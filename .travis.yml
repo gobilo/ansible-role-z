@@ -32,6 +32,6 @@ script:
 
 after_script:
   # Test that z is working.
-  - ". /opt/z/z.sh";
+  - ". /opt/z/z.sh"
   - "cd /home; cd /var"
   - "z /home"
