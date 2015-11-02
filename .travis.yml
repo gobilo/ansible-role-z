@@ -31,4 +31,4 @@ script:
     || (echo 'Idempotence test: fail' && exit 1)
 
   # Test that z is working.
-  - ". ~/.bashrc; cd /home; cd /var; z home"
+  - ". /opt/z/z.sh; cd /home; cd /var; z /home"
