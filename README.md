@@ -1,7 +1,10 @@
 Role Name
 =========
 
-Installs the jumper z.
+Installs the [jumper z](https://github.com/rupa/z).
+
+[![Build Status](https://travis-ci.org/gobilo/ansible-role-z.svg?branch=master)](https://travis-ci.org/gobilo/ansible-role-z)
+
 
 Requirements
 ------------
