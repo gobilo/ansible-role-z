@@ -30,5 +30,8 @@ script:
     && (echo 'Idempotence test: pass' && exit 0)
     || (echo 'Idempotence test: fail' && exit 1)
 
+after_script:
   # Test that z is working.
-  - ". /opt/z/z.sh; cd /home; cd /var; z /home"
+  - ". /opt/z/z.sh";
+  - "cd /home; cd /var"
+  - "z /home"
