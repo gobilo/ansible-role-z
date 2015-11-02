@@ -1,0 +1,20 @@
+---
+- name: Install jumper z
+  command: git clone https://github.com/rupa/z
+  args:
+    chdir: /opt
+    creates: /opt/z
+
+- name: Make z executable
+  file: >
+    path=/opt/z/z.sh
+    mode=755
+
+- name: Install manpage for z
+  file: src=/opt/z/z.1 dest=/usr/share/man/man1/z.1 state=link
+
+- name: Add z to .bashrc of ansible user
+  lineinfile: >
+    dest="~/.bashrc"
+    line=". /opt/z/z.sh"
+  sudo: false
