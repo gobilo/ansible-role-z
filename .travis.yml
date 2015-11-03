@@ -35,3 +35,4 @@ after_script:
   - ". /opt/z/z.sh"
   - "cd /home; cd /var"
   - "z /home"
+  - "pwd | grep ^/home$"
